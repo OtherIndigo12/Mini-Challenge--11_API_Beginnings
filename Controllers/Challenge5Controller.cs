@@ -12,7 +12,7 @@ namespace Mini_Challenge__11_API_Beginnings
         {
             if (int.TryParse(name, out _) && int.TryParse(home, out _) && int.TryParse(color, out _) && int.TryParse(favevent, out _) && int.TryParse(letter, out _))
             {
-                return BadRequest($"Invalid Response...");
+                return NotFound($"Invalid Response...");
             }
             else
             {

@@ -17,7 +17,7 @@ namespace Mini_Challenge__11_API_Beginnings
             }
             else
             {
-                return BadRequest($"Invalid Response...");
+                return NotFound($"Invalid Response...");
             }
 
             

@@ -12,7 +12,7 @@ namespace Mini_Challenge__11_API_Beginnings
         {
             if (int.TryParse(fn, out _) && time > 12)
             {
-              return BadRequest($"Invalid Response...");
+              return NotFound($"Invalid Response...");
             }
             else
             {
