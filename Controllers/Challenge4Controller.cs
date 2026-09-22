@@ -11,19 +11,19 @@ namespace Mini_Challenge__11_API_Beginnings
         {
             if (num1 > num2)
             {
-                return ($"{num1} is bigger than {num2}. {num2} is smaller than {num1}.");
+                return Ok($"{num1} is bigger than {num2}. {num2} is smaller than {num1}.");
             }
             else if (num1 < num2)
             {
-                return ($"{num1} is smaller than {num2}. {num2} is bigger than {num1}.");
+                return Ok($"{num1} is smaller than {num2}. {num2} is bigger than {num1}.");
             }
             else if (num1 == num2)
             {
-                return ($"Both Numbers are Equal");
+                return Ok($"Both Numbers are Equal");
             }
             else
             {
-                return ($"Error Message 400: Invalid Response...");
+                return BadRequest($"Invalid Response...");
             }
         }
 

@@ -12,11 +12,11 @@ namespace Mini_Challenge__11_API_Beginnings
         {
             if (int.TryParse(fn, out _) && time > 12)
             {
-              return ($"Error Message 400: Invalid Response...");
+              return BadRequest($"Invalid Response...");
             }
             else
             {
-              return ($"Your Name is {fn} and you woke up at {time}!");
+              return Ok($"Your Name is {fn} and you woke up at {time}!");
             }
             
             

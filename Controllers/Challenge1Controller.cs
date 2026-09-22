@@ -12,11 +12,11 @@ namespace Mini_Challenge__11_API_Beginnings
         {
             if (int.TryParse(id, out _))
             {
-              return ($"Error Message 400: Invalid Response...");
+              return BadRequest($"Invalid Response...");
             }
             else
             {
-              return ($"Hello There, {id}!");  
+              return Ok($"Hello There, {id}!");  
             }
             
         }
